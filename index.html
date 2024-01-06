@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Activity-5(3)</title>
+    <style>
+        li {
+            display:inline-block;
+            padding:15px;
+        }        
+        nav{
+            background-color:rgb(227, 100, 163);
+        }
+        #profile-photo{
+            width:250px;
+            height:250px;
+            border-radius:50%;
+            margin-top:10px ;
+            border:5px solid skyblue;
+
+        }
+        footer {
+        background-color:rgb(186, 40, 91);
+        color:aliceblue;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    h2{
+        color:skyblue;
+        background-color:whitesmoke;
+        text-align:left;   
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    }
+    section {
+        padding: 20px;
+        width:96%;
+        margin:auto;
+    }
+    th {
+  background-color:skyblue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top:220px;
+    margin-left:390px;
+    margin-right:20px;
+  }
+td {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(even){
+  background-color:aliceblue;
+}
+
+tbody tr:hover {
+  background-color:rgb(227, 100, 163) ;
+  color: white;
+}
+        
+nav a {
+            display:block;
+            color: white;
+            padding: 10px 10px;
+            text-decoration:none;
+            float: left;
+      } 
+nav a:visited {
+            color:blue;
+}
+nav a:hover {
+            background-color: skyblue;
+            color: black;
+        }
+        table {
+       width: 80%;
+       margin: 20px auto;
+       border-collapse: collapse;
+       border: 2px solid whitesmoke;
+       text-align: center;
+       padding: 10px 10px;
+        }
+        main{
+            border:5px solid whitesmoke;
+        }
+        section {
+      margin: 20px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    select{
+        background-color:whitesmoke;
+        text-align: center;
+        align-self: auto;
+        height: 50px;
+        width:200px
+    }
+   
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: whitesmoke;
+  color: white;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.moving-text {
+  position: relative;
+  animation: moveText 20s linear infinite;
+  white-space: nowrap;
+  color: white;
+}
+
+@keyframes moveText {
+  0% {
+    left: 100%; 
+  }
+  100% {
+    left: -100%; 
+  }
+}
+ </style>
+</head>
+<body>
+    <header><h1 style="text-align:center;color:white;background-color:skyblue;font-family:'Courier New', Courier, monospace">RESUME<br><br>
+    PARVEEN</h1></header>
+
+    <nav style="text-align:center;width:100%;height:10%;font-size:17px">
+        <ul>
+                    <li><a href="#Personal">Personal Information</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#reference">Reference</a></li>
+                    <li class="moving-text">I am ready to work as software Developer with hardwork and determination .I wish to use my knowledge at its best to contribute to my work and society.I am passionate about my work and will do my best.</li>
+        
+        </ul>
+        </nav>
+        <select onchange="location = this.value;">
+            <option value="" selected disabled hidden>About</option>
+            <option value="#Personal">Personal</option>
+            <option value="#summary">Summary</option>
+            <option value="#education">Education</option>
+            <option value="#experience">Work Experience</option>
+            <option value="#skills">Skills</option>
+            <option value="#projects">Projects</option>
+            <option value="#reference">Reference</option>
+          </select>
+        <hr>
+        <main>
+            <section id="Personal">
+            <h2>Personal Information</h2>
+                   <img src="C:\Users\HP\Downloads\MY PIC.jpeg" alt="My pic" id="profile-photo" style=";"><br><br>
+                 <b><u>NAME-</b><strong>PARVEEN</strong></u> <br><br>
+                 <address>
+                  <b>Address</b>-RV Vidysnikethan Post 8th Mile <br>
+                  Mysore Rd, RV Vidyaniketan,Mailasandra<br>
+                  Bengalore ,Karnataka 560059<br>
+                  Country : INDIA <br><br>
+                  &#9993;<a href="mailto:parveenbtech23@rvu.edu.in">parveen.btech23@rvu.edu.in</a> <br><br>
+                  &phone;<a href="tel:+916363455043">+916363455043</a><br><br>
+                  
+                  
+                  
+                  <p><b>GENDER</b>-FEMALE</p>
+                  <p><b>AGE</b>-25</p>
+            </section>
+            <section id="summary">
+            <h2>Summery</h2>
+                    <p>Hello, Myself PARVEEN,I am a very enthusiastic person .I would like to take active participation in all the step building events.
+                       I love to learn and to know new aspects . I have a versatile personality.I am competent and Goal oriented.i have a good management and 
+                       communication skill.</p><hr>
+            </section>
+            <section id="education">
+            <h2>Education</h2>
+                <table border="1">
+                                    <tr>
+                                        <th>COURSE</th>
+                                        <th>INSTITUTION</th>
+                                        <th>YEAR</th>
+                                        <th>RESULT</th>
+                                    </tr>
+                                    <tr>
+                                        <td>10th</td>
+                                        <td>SFS HIGH SCHOOL</td>
+                                        <td>2021</td>
+                                        <td>99.36%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12th</td>
+                                        <td>SHAHEEN PU</th>
+                                        <td>2023</td>
+                                        <td>97%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B.Tech</td>
+                                        <td>RV University</td>
+                                        <td>2027</td>
+                                        <td>98%</td>
+                                    </tr>
+                                </table>
+                             <hr>
+                         </section>
+            <section id="experience">
+            <h2>Work Experience</h2>
+            <table border="1">
+                   <tr>
+                    <th>PLACE</th>
+                    <th>POSITION</th>
+                    <th>DURATION</th>
+                   </tr>
+                   <tr>
+                    <td>New York</td>
+                    <td>Web Developer</td>
+                    <td>2 Years</td>
+                   </tr>
+                </table>
+            </section>
+            <hr>
+            <section id="skills">
+            <h2>Skills</h2>
+            <table border="1">
+                <tr>
+                    <th>SKILL</th>
+                    <th>LEVEL</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Expert</td>
+                </tr>
+                <tr>
+                    <td>Analytical skills</td>
+                    <td>Indermediate</td>
+                </tr>
+                <tr>
+                    <td>Leadership and management skills</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>C language</td>
+                    <td>Expert</th>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>Intermediate</td>
+                </tr>
+             </table>
+            </section>
+             <hr>
+             <section id="projects">
+             <h2>Projects</h2>
+             <table border="1">
+                <thead>
+                    <tr>
+                    <th>WORK</th>
+                    <th>SUCCESS RATE</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Built a Quiz App</td>
+                    <td style="writing-mode:vertical-rl;">90%</td>
+                </tr>
+                    <tr>
+                        <td>Built a Fitness App</td>
+                        <td style="writing-mode:vertical-rl;">87%</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Played a mojor role in developing 
+                            many other Apps</td>
+                        <td style="writing-mode:vertical-rl;">85%</td>
+                    </tr>
+               </tbody>
+             </table>
+             </section>
+             <hr>
+             <section id="reference">
+                <h2>Reference</h2>
+               <p>Available Upon Request</p>
+            </section>
+            <hr>
+        </main>
+    <footer>
+        &copy 2023 PARVEEN. All Rights Reserved.
+     </footer>
+</body>
+</html>
